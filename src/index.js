@@ -1,17 +1,15 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+// Importer les outils React
+import ReactDOM from "react-dom";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+// Importer le 1er composant: App
+import { App } from "./App";
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// Cibler la div dont l'id est root
+const divRoot = document.getElementById("root");
+
+// Créer un noeud racine react à partir de la div root
+const reactRoot = ReactDOM.createRoot(divRoot);
+
+// Injecter le 1er composant le noeud racine
+reactRoot.render(<App></App>);
+// ou reactRoot.render(<App />);
