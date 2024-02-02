@@ -1,9 +1,10 @@
-export function Greetings() {
+export function Greetings(props) {
+  console.log('***', props);
   return (
     <ul>
-      <li>Hello</li>
-      <li>my</li>
-      <li>friend</li>
+      <li>{props.nameVegetable}</li>
+      <li>Le nombres de carotte en stock: {props.quantity}</li>
+      <li>{props.image}</li>
     </ul>
   );
 }
