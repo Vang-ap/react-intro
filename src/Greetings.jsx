@@ -11,13 +11,20 @@ export function Greetings(props) {
         {/* Second way to do it */}
         <li>{props.children}</li>
 
-        {/* Shortcut boolean --> The "&&" allows you to check that there is indeed a value (true, number, string...),
-        if the value is false, zero or undefined there is nothing to display. */}
+        {/* Rendering conditionnel --- The ternary boolean (XX ? AA : BB) ---> If the value is true the OtherVegetablesAvailable component is displayed,
+        if the value is false, null or undefined, the OtherVegetablesNotAvailable component is displayed. */}
         <li>
-          d'autres légumes sont-ils disponibles:{" "}
-          {props.isOtherVegetablesAvailable && "OUI"}
+          d'autres légumes sont-ils disponibles: {props.isOtherVegetablesAvailable ? <OtherVegetablesAvailable /> : <OtherVegetablesNotAvailable />}
         </li>
       </ul>
     </>
   );
+}
+
+function OtherVegetablesAvailable() {
+ return <span>Oui</span>; 
+}
+
+function OtherVegetablesNotAvailable() {
+ return <span>Non</span>; 
 }
