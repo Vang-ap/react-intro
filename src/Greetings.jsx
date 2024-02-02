@@ -4,7 +4,9 @@ export function Greetings(props) {
     <ul>
       <li>{props.nameVegetable}</li>
       <li>Le nombres de carotte en stock: {props.quantity}</li>
-      <li>{props.image}</li>
+
+      {/* Second way to do it */}
+      <li>{props.children}</li>
     </ul>
   );
 }

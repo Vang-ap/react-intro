@@ -5,7 +5,7 @@ export function App() {
     <>
       <h1>Hello to the React world</h1>
 
-      {/* First way to do it */}
+      {/* Second way to do it */}
       <Greetings
         nameVegetable={"carotte"}
         quantity={20}
@@ -13,10 +13,10 @@ export function App() {
         doSomething={() => {
           console.log("do something");
         }}
-        image={
-          <img src="https://www.projet-voltaire.fr/pv-wp/wp-content/uploads/2012/07/Carottes.png"></img>
-        }
-      />
+      >
+        <img src="https://www.projet-voltaire.fr/pv-wp/wp-content/uploads/2012/07/Carottes.png"></img>
+      </Greetings>
     </>
   );
 }
+
