@@ -1,9 +1,12 @@
-import { AgeCounter } from "./AgeCount";
-
 export function App() {
   return (
     <>
-     <AgeCounter />
+      <div style={{
+        backgroundColor: "red",
+        height: "100px",
+        width: "100px",
+        border: "1px solid black",
+      }}></div>
     </>
   );
 }
