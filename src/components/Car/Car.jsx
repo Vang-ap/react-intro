@@ -1,7 +1,8 @@
 export function Car(props) {
-  function onClick(params) {
+  const onClick = () => {
     props.onCarClick(2);
   }
+
   return (
     <div>
       <p>Je suis car</p>
