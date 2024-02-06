@@ -1,7 +1,9 @@
-export function Car() {
+export function Car(props) {
+  
   return (
     <div>
-      <p className='box box2'>Couleur de la voiture</p>
+      <p>Je suis car</p>
+      <button onClick={props.onCarClick}>Click</button>
     </div>
   )
 }
