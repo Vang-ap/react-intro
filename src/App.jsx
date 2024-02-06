@@ -1,17 +1,16 @@
-import { Car } from "./components/Car/Car"
+import { Car } from "./components/Car/Car";
 
-import "../src/global.css"
+import "../src/global.css";
 
 export function App() {
-
-  function hello(params) {
+  function hello(number) {
     alert("Hello de <App />");
   }
   return (
     <>
       <div>
         Je suis {"<App />"}
-        <Car onCarClick={hello}/>
+        <Car onCarClick={hello} />
       </div>
     </>
   );
