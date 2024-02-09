@@ -1,0 +1,14 @@
+.conyaner {
+  display: flex;
+  flex-direction: column;
+}
+
+.containerDisplay {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.title {
+  text-align: center;
+  padding-bottom: 50px;
+}
